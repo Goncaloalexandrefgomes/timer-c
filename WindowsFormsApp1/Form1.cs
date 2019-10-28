@@ -92,6 +92,8 @@ namespace WindowsFormsApp1
         private void Acerta_Relogio_h(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left) contador += 3600;
+            if (e.Button == MouseButtons.Right) contador -= 3600;
+            mostrar();
 
         }
     }
